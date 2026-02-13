@@ -15,28 +15,32 @@
     <script rel="scripts" src="js/booking.js"></script>
 </head>
 <body>
-    <main>
+    <main class="container">
         <header>
-            <img src="images/vacation-beach.jpg">
+            <img src="images/vacation-beach.jpg" alt="a beach at sunset">
             <h1>Book Your Dream Vacation</h1>
         </header>
         <form>
-            <label for="destinatinon">Destination</label>
-            <select id="destination" name="destination">
-                <option value="none">Choose a destination...</option>
-                <option value="tokyo-japan">Tokyo, Japan</option>
-                <option value="amsterdam-netherlands">Amsterdam, Netherlands</option>
-                <option value="baguio-philippines">Baguio, Philippines</option>
-                <option value="washington-usa">Washington, United States</option>
-                <option value="saigon-vietnam">Saigon, Vietnam</option>
-            </select>
-
-            <div>
-                <label for="departure">Departure Date</label>
-                <input type="date" id="date" name="date">
-
-                <label for="travelers">Number of Travelers</label>
-                <input type="number" id="travelers" name="travelers">
+            <div class="row1">
+                <label for="destinatinon">Destination</label>
+                <select id="destination" name="destination">
+                    <option value="none">Choose a destination...</option>
+                    <option value="tokyo-japan">Tokyo, Japan</option>
+                    <option value="amsterdam-netherlands">Amsterdam, Netherlands</option>
+                    <option value="baguio-philippines">Baguio, Philippines</option>
+                    <option value="washington-usa">Washington, United States</option>
+                    <option value="saigon-vietnam">Saigon, Vietnam</option>
+                </select>
+            </div>
+            <div class="row2">
+                <div class="content">
+                    <label for="departure">Departure Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="content">
+                    <label for="travelers">Number of Travelers</label>
+                    <input type="number" id="travelers" name="travelers">
+                </div>
             </div>
             <button type="submit" id="submit-button">Find My Vacation</button>
         </form>
