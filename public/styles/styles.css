@@ -106,3 +106,10 @@ button{
 button:hover{
     background-color: darkblue;
 }
+
+/* client-side validation */
+.err{
+    color: darkred;
+    display: none;
+    font-style: italic;
+}
